@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JwtYoutubeUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# EcommerceApplicationUI
+UI code
+>>>>>>> 2b370e20ca252b6cae0bcf556a142f3bf9b01c09
