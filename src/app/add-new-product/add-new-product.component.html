@@ -31,7 +31,23 @@
                 </form>
             </div>
             <div class="col-6">
-            <input type="file" multiple value="select" #selectFile (change)="onFileSelected($event)" >
+             <div class="dropzone" 
+             appDrag
+             (files)="fileDropped($event)"
+             >
+
+                
+
+
+                <div class="text-wrapper">
+                    <div class="centered">
+                          Drag and drop your file or <a (click)="selectFile.click()" class="browse-button">browse</a> a file
+                    </div>
+                </div>
+             </div>
+
+
+            <input style="display: none;" type="file" multiple value="select" #selectFile (change)="onFileSelected($event)" >
               <div class="mt-5">
                 <div class="row">
                     <mat-grid-list cols="4" rowHeight="1:1">
