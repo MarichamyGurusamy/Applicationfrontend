@@ -1,3 +1,70 @@
 .space-button{
     flex: 1 1 auto;
 }
+
+.sidenav-container {
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.mat-toolbar {
+  top: 0;
+  z-index: 1000; /* so it stays on top */
+}
+
+.sidenav {
+  width: 220px;
+  padding: 16px;
+  background-color: #3f51b5;
+  
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  font: bold;
+  color: #f0f0f0;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+   border-bottom: 3px solid rgba(159, 155, 155, 0.1);
+}
+
+.nav-links a:hover {
+  background-color: #44d2eb;
+}
+
+mat-sidenav-content {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  margin: 0;
+}
+
+.active-link {
+  font-weight: bold;
+  background-color: #d0d0d0;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+}
+
+.sub-header {
+  position: sticky;
+  top: 64px; /* just below main-header */
+  z-index: 999;
+  height: 48px;
+}
