@@ -86,10 +86,24 @@ export class AddNewProductComponent implements OnInit {
   {
     this.product.productImages.splice(i,1);
   }
- 
+  clearForm(productForm: NgForm) {
+    productForm.resetForm(); // This resets all form controls
+    this.product = {
+      productId: null,
+      productName: "",
+      productDescription: "",
+      productDiscountedPrice: 0,
+      productActualPrice: 0,
+      productImages: []
+    };
+
+  this.isNewProduct = true; // optional, if resetting state
+}
 
   fileDropped(fileHandle: FileHandle)
   {
     this.product.productImages.push(fileHandle);
   }
 }
+
+
