@@ -1,6 +1,10 @@
 <mat-toolbar color="primary">
   <span>EV Bikes</span>
   <span class="space-button"></span>
+  <!-- My Account Icon Button -->
+  <button *ngIf="isLoggedIn()" mat-icon-button [routerLink]="'/my-account'" aria-label="My Account" style="margin-right: 8px;">
+    <mat-icon style="font-size: 32px;">account_circle</mat-icon>
+  </button>
   <button *ngIf="! isLoggedIn()" mat-raised-button color="primary" routerLink="/login">Login</button>
   <button *ngIf="isLoggedIn()"mat-raised-button color="warn" (click)="logout()">Logout</button>
 </mat-toolbar>

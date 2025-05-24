@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { OrderConfirmationComponent } from './order-confirmation/order-confirmat
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { RegisterComponent } from './register/register.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,8 @@ import { RegisterComponent } from './register/register.component';
     OrderConfirmationComponent,
     MyOrdersComponent,
     OrderDetailsComponent,
-    RegisterComponent
+    RegisterComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -68,8 +71,8 @@ import { RegisterComponent } from './register/register.component';
     MatGridListModule,
     MatTableModule,
     MatIconModule,
-    MatDialogModule
-    
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [
     AuthGuard,
